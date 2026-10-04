@@ -1,0 +1,25 @@
+[workspace]
+members = ["crates/shellview", "crates/sv-proto"]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "Apache-2.0"
+authors = ["avmg0 <15078558+avmg0@users.noreply.github.com>"]
+repository = "https://github.com/avmg0/shellview-tui"
+homepage = "https://github.com/avmg0/shellview-tui"
+readme = "README.md"
+keywords = ["terminal", "tui", "shell", "agents", "zsh"]
+categories = ["command-line-utilities"]
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+
+[profile.dev]
+debug = 1

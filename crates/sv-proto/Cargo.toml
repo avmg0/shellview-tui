@@ -1,0 +1,12 @@
+[package]
+name = "sv-proto"
+description = "Wire formats shared by ShellView and the sv command"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[dependencies]
+base64 = "0.22"
